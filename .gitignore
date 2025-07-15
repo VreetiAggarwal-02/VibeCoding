@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+tax_advisor/Lib/
+tax_advisor/Include/
+tax_advisor/Scripts/
+tax_advisor/bin/
+tax_advisor/lib/
+tax_advisor/share/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+
+# Environment variables and secrets
+.env
+.env.*
+*.env
+
+# Supabase
+.supabase/
+
+# Frontend build artifacts (if any in future)
+dist/
+build/
+node_modules/
+
+# PDF temp files
+temp_pdfs/
+
+# Logs
+*.log
+
+# Misc
+*.bak
+*.tmp 

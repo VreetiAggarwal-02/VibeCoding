@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Advisor - PDF Upload & Review</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tax Advisor</h1>
+        <form id="upload-form">
+            <label for="pdf-input">Upload Pay Slip or Form 16 (PDF):</label>
+            <input type="file" id="pdf-input" accept="application/pdf" required />
+            <button type="submit">Upload & Extract</button>
+        </form>
+        <div id="form-section" style="display:none;">
+            <h2>Review & Edit Extracted Data</h2>
+            <form id="review-form">
+                <div id="fields-container"></div>
+                <div>
+                    <label>Tax Regime:</label>
+                    <label><input type="radio" name="tax_regime" value="old" required> Old</label>
+                    <label><input type="radio" name="tax_regime" value="new"> New</label>
+                </div>
+                <button type="submit">Submit Reviewed Data</button>
+            </form>
+        </div>
+        <div id="message"></div>
+        <div id="tax-comparison" style="display:none;"></div>
+        <div id="chat-section" style="display:none; margin-top:2rem;">
+            <h2>AI Tax Advisor</h2>
+            <div id="chat-history" style="background:#f8f8f8; border-radius:8px; padding:1rem; min-height:120px; max-height:250px; overflow-y:auto; margin-bottom:1rem;"></div>
+            <form id="chat-form" style="display:flex; gap:0.5rem;">
+                <input type="text" id="chat-input" placeholder="Type your question or reply..." style="flex:1; padding:0.5rem; border-radius:4px; border:1px solid #ccc;" autocomplete="off" />
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html> 
